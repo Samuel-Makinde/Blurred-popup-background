@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height: 100vh;
+    text-transform: capitalize;
+    background: url("https://cdn.pixabay.com/photo/2017/06/26/08/13/workspace-2443050__340.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .8);
+    background: transparent;
+}
+
+.btn{
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: crimson;
+    width: 150px;
+}
+
+.btn:hover{
+    filter: brightness(.8);
+}
+
+.active.container {
+    filter: blur(5px) brightness(.8);
+}
+
+.popup-container{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    top: 30%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851__340.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .8);
+    overflow: hidden;
+    opacity: 1;
+    transition: all .7s;
+}
+
+h4{
+    text-align: center;
+    font-size: 25px;
+}
+label{
+    font-weight: 1200px;
+    text-transform: capitalize;
+    font-style: oblique;
+}
+input{
+    margin: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input-btn{
+    margin: 0px 5px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.close-icon{
+    position: fixed;
+    right: 20px;cursor: pointer;
+}
+.close-icon:hover {
+    color: crimson;
+}
+
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
